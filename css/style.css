@@ -25,6 +25,11 @@ li {
   list-style: none;
 }
 
+footer {
+  background-color: black;
+  color: white;
+}
+
 /* # UTILS */
 
 .container {
@@ -317,9 +322,16 @@ li {
 
 /* FOOTER */
 
-footer {
-  background-color: black;
+.footer-links {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  gap: 100px;
 
   /* debug */
-  height: 500px;
+  min-height: 200px;
+}
+
+.link-list-item {
+  line-height: 38px;
 }
