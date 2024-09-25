@@ -154,7 +154,7 @@ li {
   padding: 10px 0;
 }
 
-.link-buy-now {
+.link-normal-style {
   text-decoration: underline;
   color: blue;
 }
@@ -230,6 +230,49 @@ li {
   min-height: 400px;
   background-color: orange;
   border: 1px solid black;
+}
+
+.teams-container {
+  display: flex;
+
+  /* debug */
+  min-height: 500px;
+  background-color: aquamarine;
+}
+
+.teams-group {
+  width: 100%;
+
+  /* debug */
+  border: 1px solid;
+}
+
+.teams-group:nth-child(odd) {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.team-item {
+  width: 50%;
+  position: relative;
+
+  /* debug */
+  background-color: orange;
+  border: 1px solid;
+}
+
+.team-name {
+  width: 200px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.citation {
+  padding: 50px;
 }
 
 /* FOOTER */
