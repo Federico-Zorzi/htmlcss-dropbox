@@ -80,7 +80,7 @@
               </p>
               <button class="btn btn-blue">Inizia la tua prova gratuita</button>
               <p>Annulla in qualsiasi momento</p>
-              <i class="hero-arrow-down fa-solid fa-arrow-down fa-2xl"></i>
+              <i class="fa-solid fa-arrow-down fa-3x"></i>
             </div>
             <div class="hero-image">
               <img src="./img/jumbo.png" alt="jumbo" />
@@ -91,21 +91,27 @@
     </header>
     <main>
       <!-- piani di abbonamento -->
-      <section class="main-content">
+      <section id="subscription-plan" class="main-content">
         <div class="container">
           <h2>Trova il piano business che fa per te</h2>
           <div>
-            <input type="radio" name="plan-type" /> Fattura mensile
-            <input type="radio" name="plan-type" /> Fattura annuale
+            <input type="radio" name="plan-type" class="plan-mounthly" />
+            Fattura mensile
+            <input type="radio" name="plan-type" class="plan-yearly" /> Fattura
+            annuale
           </div>
+
           <div class="cards">
             <div class="card">
-              <div class="card-header">Singolo</div>
+              <div class="card-header">
+                <i class="fa-solid fa-user"></i>
+                Singolo
+              </div>
               <div class="card-body">
                 <section class="card-subscription-upper">
                   <h3>Professional</h3>
-                  <span class="prize">&euro; 12,00</span> <br />
-                  <span class="time">/mese</span>
+                  <h4 class="prize">&euro; 12.00</h4>
+                  <p class="time">/mese</p>
                   <ul class="card-list">
                     <li class="card-list-item">1 utente</li>
                     <li class="card-list-item">
@@ -118,7 +124,9 @@
                       sicura
                     </li>
                   </ul>
-                  <button class="btn">Prova gratis per 30 giorni</button>
+                  <button class="btn btn-blue w-100">
+                    Prova gratis per 30 giorni
+                  </button>
                   <p>
                     oppure
                     <a href="#" class="link-normal-style">acquista ora</a>
@@ -139,12 +147,15 @@
             </div>
 
             <div class="card">
-              <div class="card-header">Singolo</div>
+              <div class="card-header">
+                <i class="fa-solid fa-users"></i>
+                Team
+              </div>
               <div class="card-body">
                 <section class="card-subscription-upper">
-                  <h3>Professional</h3>
-                  <span class="prize">&euro; 12,00</span> <br />
-                  <span class="time">/mese</span>
+                  <h3>Advanced</h3>
+                  <h4 class="prize">&euro; 18.00</h4>
+                  <p class="time">/mese</p>
                   <ul class="card-list">
                     <li class="card-list-item">1 utente</li>
                     <li class="card-list-item">
@@ -157,7 +168,9 @@
                       sicura
                     </li>
                   </ul>
-                  <button class="btn">Prova gratis per 30 giorni</button>
+                  <button class="btn btn-blue w-100">
+                    Prova gratis per 30 giorni
+                  </button>
                   <p>
                     oppure
                     <a href="#" class="link-normal-style">acquista ora</a>
@@ -178,12 +191,15 @@
             </div>
 
             <div class="card">
-              <div class="card-header">Singolo</div>
+              <div class="card-header">
+                <i class="fa-solid fa-building"></i>
+                Azienda
+              </div>
               <div class="card-body">
                 <section class="card-subscription-upper">
-                  <h3>Professional</h3>
-                  <span class="prize">&euro; 12,00</span> <br />
-                  <span class="time">/mese</span>
+                  <h3>Enterprise</h3>
+                  <h4 class="prize">Contattaci</h4>
+                  <p class="time">/mese</p>
                   <ul class="card-list">
                     <li class="card-list-item">1 utente</li>
                     <li class="card-list-item">
@@ -196,7 +212,9 @@
                       sicura
                     </li>
                   </ul>
-                  <button class="btn">Prova gratis per 30 giorni</button>
+                  <button class="btn btn-blue w-100">
+                    Prova gratis per 30 giorni
+                  </button>
                   <p>
                     oppure
                     <a href="#" class="link-normal-style">acquista ora</a>
@@ -220,7 +238,7 @@
             <div class="card-header">Team</div>
             <div class="card-body">
               <div class="description-team">
-                <h2>Enterprise</h2>
+                <h3>Enterprise</h3>
                 <span>Contatta l'ufficio vendite per i prezzi</span>
                 <p>
                   Soluzioni personalizzate e supporto su misura per aiutare i
@@ -237,14 +255,14 @@
       </section>
 
       <!-- partner -->
-      <section class="main-content">
+      <section id="partners" class="main-content">
         <div class="container">
           <div class="card-partner">
             <div class="card-image">
               <img src="./img/partner.png" alt="partner" />
             </div>
             <div class="card-description">
-              <h2>Entra in contatto con un partner Dropbox</h2>
+              <h3>Entra in contatto con un partner Dropbox</h3>
               <p>
                 Trova un partner Dropbox e HelloSign <br />
                 di fiducia. Ottieni le soluzioni e i servizi <br />
@@ -260,7 +278,7 @@
       </section>
 
       <!-- operazioni -->
-      <section class="main-content">
+      <section id="functional-tools" class="main-content">
         <div class="container">
           <h2>Esegui più operazioni con Dropbox Business</h2>
           <div class="card-operations">
@@ -391,7 +409,7 @@
       </section>
 
       <!-- clienti -->
-      <section class="main-content">
+      <section id="customers" class="main-content">
         <div class="container">
           <h2>
             Più di 500.000 team utilizzano <br />
@@ -405,7 +423,7 @@
       </section>
 
       <!-- teams -->
-      <section>
+      <section id="teams">
         <div class="brands-container">
           <div class="brands-columns">
             <div class="brand-item">
@@ -476,7 +494,7 @@
       </section>
 
       <!-- prova gratuita -->
-      <section class="free-try">
+      <section id="free-try" class="test-free-try">
         <div class="container">
           <div class="card-free-try">
             <div class="card-title">
@@ -490,7 +508,7 @@
         </div>
       </section>
 
-      <section class="main-content">
+      <section id="faq" class="main-content">
         <div class="container">
           <h2>Domande Frequenti</h2>
           <ul class="question-list">
