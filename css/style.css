@@ -31,6 +31,10 @@ footer {
   color: white;
 }
 
+#brands svg * {
+  fill: white;
+}
+
 /* # UTILS */
 
 .container {
@@ -215,6 +219,10 @@ h3 {
   color: blue;
 }
 
+.card-subscription-lower h4 {
+  margin-bottom: 20px;
+}
+
 .card-check {
   color: #33a7ff;
 }
@@ -326,6 +334,10 @@ h3 {
 
 .brands-columns:nth-child(1) .brand-item:nth-child(4) {
   background-color: #ff1c1c;
+}
+
+.brands-columns:nth-child(2) p {
+  margin: 60px 0 45px;
 }
 
 .brands-columns:nth-child(3) .brand-item:nth-child(1) {
