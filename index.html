@@ -16,6 +16,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -23,36 +32,32 @@
     <header class="header">
       <!-- upper header -->
       <div class="upper-header">
-        <div>
-          <div class="logo">
-            <img src="./img/logo-small.png" alt="logo" />
-            <ul class="header-links">
-              <li class="links-item">
-                <a href="#">Perchè Dropbox</a>
-              </li>
-              <li class="links-item">
-                <a href="#">Funzioni</a>
-              </li>
-              <li class="links-item">
-                <a href="#">Piani e Prezzi</a>
-              </li>
-            </ul>
-          </div>
+        <div class="header-item-left">
+          <img src="./img/logo-small.png" alt="logo" />
+          <ul class="header-links">
+            <li class="links-item">
+              <a href="#">Perchè Dropbox</a>
+            </li>
+            <li class="links-item">
+              <a href="#">Funzioni</a>
+            </li>
+            <li class="links-item">
+              <a href="#">Piani e Prezzi</a>
+            </li>
+          </ul>
         </div>
 
-        <div>
-          <div class="links-info">
-            <ul class="header-links">
-              <li class="links-item">
-                <a href="#">Supporto</a>
-              </li>
-              <li class="links-item">
-                <a href="#">Contatta l'ufficio vendite</a>
-              </li>
-            </ul>
-            <button class="btn">Accedi</button>
-            <button class="btn">Inizia</button>
-          </div>
+        <div class="header-item-right">
+          <ul class="header-links">
+            <li class="links-item">
+              <a href="#">Supporto</a>
+            </li>
+            <li class="links-item">
+              <a href="#">Contatta l'ufficio vendite</a>
+            </li>
+          </ul>
+          <button class="btn">Accedi</button>
+          <button class="btn btn-blue">Inizia</button>
         </div>
       </div>
 
@@ -73,9 +78,9 @@
                 integrato per ottimizzare il flusso di lavoro <br />
                 esistente.
               </p>
-              <button class="btn">Inizia la tua prova gratuita</button>
+              <button class="btn btn-blue">Inizia la tua prova gratuita</button>
               <p>Annulla in qualsiasi momento</p>
-              <i class="arrow-icon fa-solid fa-arrow-down fa-2xl"></i>
+              <i class="hero-arrow-down fa-solid fa-arrow-down fa-2xl"></i>
             </div>
             <div class="hero-image">
               <img src="./img/jumbo.png" alt="jumbo" />
@@ -90,8 +95,8 @@
         <div class="container">
           <h2>Trova il piano business che fa per te</h2>
           <div>
-            <input type="checkbox" /> Fattura mensile
-            <input type="checkbox" /> Fattura annuale
+            <input type="radio" name="plan-type" /> Fattura mensile
+            <input type="radio" name="plan-type" /> Fattura annuale
           </div>
           <div class="cards">
             <div class="card">
@@ -401,33 +406,30 @@
 
       <!-- teams -->
       <section>
-        <div class="teams-container">
-          <!-- primo gruppo di quattro teams -->
-          <div class="teams-group">
-            <div class="team-item">
+        <div class="brands-container">
+          <div class="brands-columns">
+            <div class="brand-item">
               <img src="./img/designit.svg" alt="team1" class="team-name" />
             </div>
-            <div class="team-item">
+            <div class="brand-item">
               <img
                 src="./img/arizona_state_university.svg"
                 alt="team2"
                 class="team-name"
               />
             </div>
-            <div class="team-item">
+            <div class="brand-item">
               <img
                 src="./img/university_of_florida.svg"
                 alt="team3"
                 class="team-name"
               />
             </div>
-            <div class="team-item">
+            <div class="brand-item">
               <img src="./img/topps.svg" alt="team4" class="team-name" />
             </div>
           </div>
-
-          <!-- elemento intermedio -->
-          <div class="teams-group">
+          <div class="brands-columns">
             <div class="citation">
               <img
                 src="./img/designit.svg"
@@ -444,27 +446,25 @@
               <cite> Morten Thomsen, Global IT Lead</cite>
             </div>
           </div>
-
-          <!-- secondo gruppo di quattro teams -->
-          <div class="teams-group">
-            <div class="team-item">
+          <div class="brands-columns">
+            <div class="brand-item">
               <img
                 src="./img/world_bicycle_relief.svg"
                 alt="team5"
                 class="team-name"
               />
             </div>
-            <div class="team-item">
+            <div class="brand-item">
               <img src="./img/hearst_corp.svg" alt="team6" class="team-name" />
             </div>
-            <div class="team-item">
+            <div class="brand-item">
               <img
                 src="./img/lonely_planet.svg"
                 alt="team7"
                 class="team-name"
               />
             </div>
-            <div class="team-item">
+            <div class="brand-item">
               <img
                 src="./img/clear_channel.svg"
                 alt="team8"
@@ -497,17 +497,17 @@
             <li class="question-list-item">
               Qual è la differenza tra Dropbox Business Standard e Dropbox
               Business advanced
-              <i class="fa-solid fa-angle-down"></i>
+              <i class="arrow-icon fa-solid fa-angle-down"></i>
             </li>
             <li class="question-list-item">
               Qual è la differenza tra Dropbox Business Standard e Dropbox
               Business advanced
-              <i class="fa-solid fa-angle-down"></i>
+              <i class="arrow-icon fa-solid fa-angle-down"></i>
             </li>
             <li class="question-list-item">
               Qual è la differenza tra Dropbox Business Standard e Dropbox
               Business advanced
-              <i class="fa-solid fa-angle-down"></i>
+              <i class="arrow-icon fa-solid fa-angle-down"></i>
             </li>
           </ul>
         </div>
