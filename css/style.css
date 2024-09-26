@@ -31,6 +31,10 @@ footer {
   color: white;
 }
 
+#brands svg {
+  width: 50%;
+}
+
 #brands svg * {
   fill: white;
 }
@@ -44,8 +48,8 @@ footer {
   max-width: 100%;
 }
 
-footer .container,
-header .container {
+.hero-section .container,
+footer .container {
   margin: 0 auto;
   padding: 0 10px;
   width: 1300px;
@@ -89,6 +93,13 @@ h3 {
 
 /* HEADER */
 
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+}
+
 .upper-header {
   display: flex;
   justify-content: space-between;
@@ -114,11 +125,11 @@ h3 {
   margin: 0 20px;
 }
 
-.lower-header {
+.hero-section {
   background-color: #b4d0e7;
 }
 
-.lower-header .hero {
+.hero-section .hero {
   position: relative;
   top: 80px;
 }
@@ -336,6 +347,9 @@ h3 {
   background-color: #ff1c1c;
 }
 
+.brands-columns:nth-child(2) {
+  overflow: auto;
+}
 .brands-columns:nth-child(2) p {
   margin: 60px 0 45px;
 }
@@ -356,8 +370,8 @@ h3 {
   background-color: #ffd830;
 }
 
-.team-name {
-  width: 170px;
+#brands .brands-columns:nth-child(1) .brand-item:nth-child(3) > svg {
+  width: auto;
 }
 
 .citation {
